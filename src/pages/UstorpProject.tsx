@@ -18,8 +18,7 @@ export default function UstorpProject() {
               </span>
               <h1 className="text-natura-900 mb-6">NaturaTua Ustorp</h1>
               <p className="text-natura-700 mb-6 text-lg">
-                Invest in biodiversity restoration through our pioneering project in Ustorp, 
-                where we're transforming degraded land into thriving ecosystems.
+                The NaturaTua Ustorp pilot project represents our first step toward creating a new market mechanism for biodiversity restoration. Located in Ustorp, this project transforms degraded farmland into thriving ecosystems.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button 
@@ -53,29 +52,29 @@ export default function UstorpProject() {
           <SectionTitle
             subtitle="Project Overview"
             title="Restoring Biodiversity in Ustorp"
-            description="Our flagship project represents a new approach to biodiversity investment, combining ecological restoration with sustainable financial returns."
+            description="The pilot project combines our investment model with ecological restoration expertise to create a blueprint for future projects."
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="reveal-on-scroll">
               <InfoCard
                 icon={<Leaf size={24} />}
-                title="Ecological Impact"
-                content="Restoration of 500 hectares of degraded farmland into diverse habitats supporting hundreds of native species."
+                title="Ecological Restoration"
+                content="We are transforming 500 hectares of degraded farmland into diverse habitats that support hundreds of native species and enhance ecosystem functions."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-200">
               <InfoCard
                 icon={<DollarSign size={24} />}
-                title="Investment Opportunity"
-                content="Purchase BioDiversity Units (BDUs) representing the annual cost of maintaining one hectare of restored land."
+                title="BDU Investment Model"
+                content="For the first time, investors can purchase BioDiversity Units that directly finance the restoration and maintenance of specific land areas."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-400">
               <InfoCard
                 icon={<LineChart size={24} />}
-                title="Long-term Returns"
-                content="Projected annual returns of 5-8% through sustainable resource utilization and ecosystem services."
+                title="Sustainable Returns"
+                content="The project generates returns through sustainable resource utilization, carbon sequestration, ecosystem services, and recreational value."
               />
             </div>
           </div>
@@ -100,7 +99,7 @@ export default function UstorpProject() {
               <SectionTitle
                 subtitle="Investment Model"
                 title="BioDiversity Units (BDUs)"
-                description="A new asset class for ecological investment"
+                description="A new asset class connecting investors with ecological restoration"
                 alignment="left"
               />
               
@@ -112,8 +111,8 @@ export default function UstorpProject() {
                   <div>
                     <h3 className="text-lg font-medium text-natura-900 mb-2">What is a BDU?</h3>
                     <p className="text-natura-700">
-                      A BioDiversity Unit represents the annual cost of maintaining and monitoring one hectare of 
-                      restored land, ensuring biodiversity protection and ecological improvement.
+                      A BioDiversity Unit (BDU) represents the annual cost of maintaining and monitoring one hectare of 
+                      restored habitat. By purchasing BDUs, investors directly finance specific areas within the project.
                     </p>
                   </div>
                 </div>
@@ -125,8 +124,8 @@ export default function UstorpProject() {
                   <div>
                     <h3 className="text-lg font-medium text-natura-900 mb-2">Investment Structure</h3>
                     <p className="text-natura-700">
-                      BDUs are available at €5,000 per unit, with a minimum investment of 1 BDU. 
-                      Investors receive annual reports on ecological progress and financial performance.
+                      BDUs for the Ustorp project are priced at €5,000 per unit per year. Investors can purchase multiple BDUs 
+                      and receive detailed reports on the ecological progress and financial performance of their investment.
                     </p>
                   </div>
                 </div>
@@ -138,8 +137,8 @@ export default function UstorpProject() {
                   <div>
                     <h3 className="text-lg font-medium text-natura-900 mb-2">Return Mechanism</h3>
                     <p className="text-natura-700">
-                      Returns are generated through sustainable resource utilization, carbon credits, 
-                      ecotourism, and other ecosystem services developed on the restored land.
+                      We target annual returns of 5-8% through a combination of sustainable resource utilization, carbon credits, 
+                      ecotourism opportunities, and payments for ecosystem services that develop as the land is restored.
                     </p>
                   </div>
                 </div>
@@ -159,7 +158,7 @@ export default function UstorpProject() {
           <SectionTitle
             subtitle="Project Timeline"
             title="Our Restoration Journey"
-            description="The Ustorp project follows a carefully planned restoration process spanning multiple years."
+            description="The Ustorp project follows a carefully planned restoration process designed to maximize ecological recovery and investment returns over time."
           />
           
           <div className="relative mt-16 pl-8 border-l-2 border-natura-200 space-y-16 max-w-3xl mx-auto">
@@ -167,22 +166,22 @@ export default function UstorpProject() {
               {
                 year: "2023",
                 title: "Land Acquisition & Planning",
-                description: "Purchase of 500 hectares of degraded farmland. Comprehensive ecological assessment and restoration planning with expert partners."
+                description: "We secured 500 hectares of degraded farmland in Ustorp. Our team conducted comprehensive ecological assessments and developed detailed restoration plans with expert partners."
               },
               {
                 year: "2024",
                 title: "Initial Restoration",
-                description: "Soil remediation, invasive species removal, and planting of native vegetation across 30% of the project area."
+                description: "We've begun the first phase of active restoration, including soil remediation, removing invasive species, and planting native vegetation across 30% of the project area."
               },
               {
                 year: "2025-2026",
                 title: "Ecosystem Development",
-                description: "Continued restoration efforts, wildlife corridor establishment, and implementation of sustainable management practices."
+                description: "We'll continue restoration efforts across the remaining project area, establish wildlife corridors, and implement sustainable management practices to enhance biodiversity."
               },
               {
                 year: "2027 onwards",
                 title: "Monitoring & Management",
-                description: "Long-term ecological monitoring, adaptive management, and sustainable resource utilization to generate returns."
+                description: "Long-term ecological monitoring and adaptive management will ensure continued biodiversity enhancement, while sustainable resource utilization will generate returns for investors."
               }
             ].map((phase, index) => (
               <div key={index} className="relative reveal-on-scroll">
@@ -204,14 +203,14 @@ export default function UstorpProject() {
       <section className="py-20 bg-natura-900 text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif mb-6 reveal-on-scroll">Join the Biodiversity Restoration Movement</h2>
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 reveal-on-scroll">Become a Biodiversity Investor</h2>
             <p className="text-natura-200 mb-8 text-lg reveal-on-scroll animation-delay-200">
-              By investing in NaturaTua Ustorp, you're not just supporting ecological restoration – 
-              you're pioneering a new asset class that values nature as it should be valued.
+              Join our pioneering community of investors who are financing the restoration of nature while generating sustainable returns. 
+              The Ustorp project is currently accepting investments in BioDiversity Units (BDUs).
             </p>
             <div className="flex flex-wrap justify-center gap-4 reveal-on-scroll animation-delay-400">
               <Button size="lg" className="bg-natura-600 hover:bg-natura-500 text-white">
-                Become an Investor
+                Invest in BDUs
               </Button>
               <Button variant="outline" size="lg" className="border-natura-400 text-white hover:bg-natura-800">
                 Schedule a Consultation

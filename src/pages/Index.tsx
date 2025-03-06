@@ -1,48 +1,12 @@
+
 import { useEffect, useRef } from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { SectionTitle } from '@/components/ui/section-title';
-import { ProductCard } from '@/components/ui/product-card';
 import { InfoCard } from '@/components/ui/info-card';
 import { InvestmentSection } from '@/components/ui/investment-section';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Leaf, Recycle, Heart, ShieldCheck, TreePine, Globe, DollarSign } from 'lucide-react';
-
-// Mock data for products
-const featuredProducts = [
-  {
-    id: 'moisturizer',
-    name: 'Daily Moisturizer',
-    description: 'Hydrating cream with natural extracts for all skin types.',
-    price: 35,
-    image: 'https://images.unsplash.com/photo-1570194065650-d99fb4cb64c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
-    category: 'Skincare'
-  },
-  {
-    id: 'serum',
-    name: 'Vitamin C Serum',
-    description: 'Brightening serum that reduces dark spots and enhances glow.',
-    price: 48,
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
-    category: 'Skincare'
-  },
-  {
-    id: 'oil',
-    name: 'Calming Essential Oil',
-    description: 'Blend of lavender and chamomile to promote relaxation and sleep.',
-    price: 28,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
-    category: 'Wellness'
-  },
-  {
-    id: 'mask',
-    name: 'Clay Purifying Mask',
-    description: 'Deep cleansing mask that draws out impurities and toxins.',
-    price: 32,
-    image: 'https://images.unsplash.com/photo-1601049673742-d24bc1aa1f2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
-    category: 'Skincare'
-  },
-];
+import { Leaf, Recycle, Heart, ShieldCheck, TreePine, Globe, DollarSign } from 'lucide-react';
 
 const Index = () => {
   // Refs for scroll animations
@@ -80,32 +44,38 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="max-w-2xl animate-fade-up">
             <span className="inline-block text-sand-100 text-sm uppercase tracking-wider mb-4 font-medium">
-              Natural. Sustainable. Effective.
+              Invest in Biodiversity
             </span>
-            <h1 className="text-white mb-6">Embrace the power of nature for your well-being</h1>
+            <h1 className="text-white mb-6">Help Restore Earth's Biodiversity</h1>
             <p className="text-sand-100 mb-8 text-lg md:text-xl">
-              Our products are crafted with care using sustainable ingredients that nourish your body and respect the earth.
+              NaturaTua seeks to reverse the negative trend in biodiversity through a new investment model. We create transparent opportunities for individuals and institutions to directly finance targeted ecological restoration.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 className="bg-natura-700 hover:bg-natura-800 text-white"
+                asChild
               >
-                Explore Products
+                <Link to="/projects/ustorp">
+                  Our First Project
+                </Link>
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="bg-transparent border-white text-white hover:bg-white/10"
+                asChild
               >
-                Our Philosophy
+                <Link to="/philosophy">
+                  Our Philosophy
+                </Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Biodiversity Investment Section - NEW */}
+      {/* Biodiversity Investment Section */}
       <section className="py-20 bg-natura-50">
         <div className="container">
           <SectionTitle
@@ -161,55 +131,23 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Featured Products */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <SectionTitle
-            subtitle="Our Collection"
-            title="Crafted with Care"
-            description="Discover our selection of premium products designed to enhance your natural beauty and well-being."
-          />
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredProducts.map((product) => (
-              <div key={product.id} className="reveal-on-scroll">
-                <ProductCard {...product} />
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Button 
-              variant="outline"
-              className="border-natura-700 text-natura-700 hover:bg-natura-50 group"
-            >
-              View All Products
-              <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </div>
-        </div>
-      </section>
-      
       {/* About Section */}
-      <section className="py-20 bg-natura-50">
+      <section className="py-20 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal-on-scroll">
               <span className="inline-block text-natura-600 text-sm uppercase tracking-wider mb-4 font-medium">
-                Our Story
+                Our Approach
               </span>
-              <h2 className="text-natura-900 mb-6">Inspired by tradition, guided by science</h2>
+              <h2 className="text-natura-900 mb-6">A New Asset Class for Ecosystem Restoration</h2>
               <p className="text-natura-700 mb-6">
-                Natura was born from a passion for the healing power of plants and a commitment to sustainable practices. 
-                For generations, our family has harvested botanicals using time-honored traditions while embracing 
-                modern scientific advancements to create products that truly work.
+                NaturaTua introduces BioDiversity Units (BDUs) - a new asset class designed to finance ecosystem restoration and preservation. Each BDU represents the annual cost of restoring and maintaining one hectare of land.
               </p>
               <p className="text-natura-700 mb-8">
-                Each formula is meticulously crafted to harness the potent properties of organic ingredients, 
-                delivering effective results while honoring our commitment to environmental stewardship.
+                Investors in BDUs receive financial returns generated through sustainable resource utilization, carbon credits, and ecosystem services, while making a measurable positive impact on biodiversity.
               </p>
-              <Button className="bg-natura-700 hover:bg-natura-800 text-white">
-                Learn More About Us
+              <Button className="bg-natura-700 hover:bg-natura-800 text-white" asChild>
+                <Link to="/philosophy">Learn More About Our Approach</Link>
               </Button>
             </div>
             
@@ -217,16 +155,16 @@ const Index = () => {
               <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1608613304226-f133cdfc074c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" 
-                  alt="Natura botanicals" 
+                  alt="Natura ecosystems" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 w-64 aspect-square bg-natura-100 rounded-lg p-6 shadow-lg">
                 <div className="h-full flex flex-col justify-center">
                   <p className="font-serif text-lg text-natura-800 italic">
-                    "We believe that beauty and wellness should never come at the expense of our planet."
+                    "Biodiversity loss is one of humanity's greatest challenges. Through investments, we can reverse this trend."
                   </p>
-                  <p className="mt-4 text-sm text-natura-600">— Maria Garcia, Founder</p>
+                  <p className="mt-4 text-sm text-natura-600">— NaturaTua Team</p>
                 </div>
               </div>
             </div>
@@ -235,92 +173,43 @@ const Index = () => {
       </section>
       
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-natura-50">
         <div className="container">
           <SectionTitle
-            subtitle="Our Values"
-            title="What We Stand For"
-            description="Our commitment goes beyond creating great products. We're guided by core principles that shape everything we do."
+            subtitle="Our Core Values"
+            title="What Drives Our Mission"
+            description="At NaturaTua, we're guided by a set of principles that shape our approach to biodiversity investment and restoration."
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="reveal-on-scroll animation-delay-200">
               <InfoCard
                 icon={<Leaf size={24} />}
-                title="Natural Ingredients"
-                content="We source only the highest quality botanical ingredients, free from harmful chemicals and synthetic additives."
+                title="Biodiversity First"
+                content="We prioritize ecological outcomes and biodiversity protection in all our projects and investments."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-400">
               <InfoCard
                 icon={<Recycle size={24} />}
-                title="Sustainable Practices"
-                content="From harvesting to packaging, we implement eco-friendly processes that minimize our environmental footprint."
+                title="Sustainable Returns"
+                content="We believe financial returns and ecological restoration can go hand-in-hand through innovative investment models."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-600">
               <InfoCard
                 icon={<Heart size={24} />}
-                title="Ethical Sourcing"
-                content="We work directly with local farmers and communities, ensuring fair compensation and sustainable cultivation."
+                title="Transparency"
+                content="All our projects feature clear metrics, regular reporting, and verifiable ecological outcomes."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-800">
               <InfoCard
                 icon={<ShieldCheck size={24} />}
-                title="Proven Efficacy"
-                content="Our formulations are backed by scientific research and testing to ensure they deliver real results."
+                title="Scientific Approach"
+                content="Our restoration projects are based on scientific principles and monitored by ecology experts."
               />
             </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Testimonial Section */}
-      <section className="py-20 bg-natura-50">
-        <div className="container">
-          <SectionTitle
-            subtitle="Testimonials"
-            title="What Our Customers Say"
-            description="Join thousands of satisfied customers who have made Natura a part of their daily wellness routine."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((index) => (
-              <div 
-                key={index} 
-                className="bg-white p-8 rounded-lg shadow-sm border border-natura-100 reveal-on-scroll"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className="flex items-center mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg 
-                      key={star} 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      viewBox="0 0 24 24" 
-                      fill="currentColor" 
-                      className="w-5 h-5 text-yellow-500"
-                    >
-                      <path 
-                        fillRule="evenodd" 
-                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" 
-                        clipRule="evenodd" 
-                      />
-                    </svg>
-                  ))}
-                </div>
-                <blockquote className="mb-4 text-natura-800 font-serif italic">
-                  "I've tried countless natural skincare products, but Natura truly stands out. The results are remarkable, and I love knowing that I'm supporting sustainable practices."
-                </blockquote>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-natura-200 mr-3"></div>
-                  <div>
-                    <p className="font-medium text-natura-900">Jane Smith</p>
-                    <p className="text-sm text-natura-600">Loyal Customer</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -329,9 +218,9 @@ const Index = () => {
       <section className="py-24 bg-natura-900 text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif mb-6 reveal-on-scroll">Join the Natura community</h2>
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 reveal-on-scroll">Join the Biodiversity Restoration Movement</h2>
             <p className="text-natura-200 mb-8 text-lg reveal-on-scroll animation-delay-200">
-              Subscribe to our newsletter for exclusive offers, wellness tips, and updates on new products.
+              Subscribe to our newsletter for updates on our projects, investment opportunities, and the latest from the world of biodiversity restoration.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto reveal-on-scroll animation-delay-400">
               <input 

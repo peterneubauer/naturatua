@@ -30,8 +30,8 @@ export function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-serif mb-4">Natura</h3>
-            <p className="text-natura-700 mb-6">Natural wellness products inspired by ancient traditions and modern science.</p>
+            <h3 className="text-2xl font-serif mb-4">NaturaTua</h3>
+            <p className="text-natura-700 mb-6">Empowering biodiversity restoration through innovative investment models that benefit both investors and the planet.</p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="text-natura-700 hover:text-natura-900 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
@@ -42,20 +42,20 @@ export function Footer() {
               <a href="https://facebook.com" className="text-natura-700 hover:text-natura-900 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="mailto:info@natura.com" className="text-natura-700 hover:text-natura-900 transition-colors" aria-label="Email">
+              <a href="mailto:info@naturatua.com" className="text-natura-700 hover:text-natura-900 transition-colors" aria-label="Email">
                 <Mail size={20} />
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-medium mb-4">Shop</h4>
+            <h4 className="text-lg font-medium mb-4">Projects</h4>
             <ul className="space-y-2">
-              <li><Link to="/products" className="text-natura-700 hover:text-natura-900 transition-colors">All Products</Link></li>
-              <li><Link to="/products/skincare" className="text-natura-700 hover:text-natura-900 transition-colors">Skincare</Link></li>
-              <li><Link to="/products/wellness" className="text-natura-700 hover:text-natura-900 transition-colors">Wellness</Link></li>
-              <li><Link to="/products/bundles" className="text-natura-700 hover:text-natura-900 transition-colors">Bundles</Link></li>
-              <li><Link to="/products/gifts" className="text-natura-700 hover:text-natura-900 transition-colors">Gift Sets</Link></li>
+              <li><Link to="/projects/ustorp" className="text-natura-700 hover:text-natura-900 transition-colors">Ustorp Project</Link></li>
+              <li><Link to="/projects" className="text-natura-700 hover:text-natura-900 transition-colors">Future Projects</Link></li>
+              <li><Link to="/investments" className="text-natura-700 hover:text-natura-900 transition-colors">Investment Models</Link></li>
+              <li><Link to="/impact" className="text-natura-700 hover:text-natura-900 transition-colors">Impact Reports</Link></li>
+              <li><Link to="/biodiversity" className="text-natura-700 hover:text-natura-900 transition-colors">Biodiversity Resources</Link></li>
             </ul>
           </div>
           
@@ -64,15 +64,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-natura-700 hover:text-natura-900 transition-colors">Our Story</Link></li>
               <li><Link to="/philosophy" className="text-natura-700 hover:text-natura-900 transition-colors">Philosophy</Link></li>
-              <li><Link to="/sustainability" className="text-natura-700 hover:text-natura-900 transition-colors">Sustainability</Link></li>
-              <li><Link to="/ingredients" className="text-natura-700 hover:text-natura-900 transition-colors">Ingredients</Link></li>
+              <li><Link to="/team" className="text-natura-700 hover:text-natura-900 transition-colors">Our Team</Link></li>
+              <li><Link to="/partners" className="text-natura-700 hover:text-natura-900 transition-colors">Partners</Link></li>
               <li><Link to="/contact" className="text-natura-700 hover:text-natura-900 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-medium mb-4">Newsletter</h4>
-            <p className="text-natura-700 mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+            <p className="text-natura-700 mb-4">Subscribe for updates on our projects, biodiversity insights, and investment opportunities.</p>
             <form onSubmit={handleSubscribe} className="space-y-2">
               <Input 
                 type="email" 
@@ -89,12 +89,12 @@ export function Footer() {
         
         <div className="pt-8 border-t border-natura-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-natura-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Natura. All rights reserved.
+            © {new Date().getFullYear()} NaturaTua. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <Link to="/privacy" className="text-natura-500 hover:text-natura-700 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-natura-500 hover:text-natura-700 transition-colors">Terms of Service</Link>
-            <Link to="/shipping" className="text-natura-500 hover:text-natura-700 transition-colors">Shipping Info</Link>
+            <Link to="/legal" className="text-natura-500 hover:text-natura-700 transition-colors">Legal Information</Link>
           </div>
           <Button 
             variant="ghost" 
