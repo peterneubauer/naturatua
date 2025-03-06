@@ -1,11 +1,12 @@
-
 import { useEffect, useRef } from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { SectionTitle } from '@/components/ui/section-title';
 import { ProductCard } from '@/components/ui/product-card';
 import { InfoCard } from '@/components/ui/info-card';
+import { InvestmentSection } from '@/components/ui/investment-section';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Leaf, Recycle, Heart, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Leaf, Recycle, Heart, ShieldCheck, TreePine, Globe, DollarSign } from 'lucide-react';
 
 // Mock data for products
 const featuredProducts = [
@@ -100,6 +101,62 @@ const Index = () => {
                 Our Philosophy
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Biodiversity Investment Section - NEW */}
+      <section className="py-20 bg-natura-50">
+        <div className="container">
+          <SectionTitle
+            subtitle="Invest in Nature"
+            title="Biodiversity Restoration Investment"
+            description="NaturaTua offers a pioneering approach to ecological investment, allowing you to contribute to biodiversity restoration while generating sustainable returns."
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="reveal-on-scroll">
+              <InfoCard
+                icon={<TreePine size={24} />}
+                title="Ecological Impact"
+                content="Your investment directly funds the restoration and protection of vital ecosystems, enhancing biodiversity and ecosystem services."
+              />
+            </div>
+            <div className="reveal-on-scroll animation-delay-200">
+              <InfoCard
+                icon={<DollarSign size={24} />}
+                title="Financial Returns"
+                content="Our innovative investment model generates sustainable returns through ecosystem services, carbon credits, and sustainable resource utilization."
+              />
+            </div>
+            <div className="reveal-on-scroll animation-delay-400">
+              <InfoCard
+                icon={<Globe size={24} />}
+                title="Global Significance"
+                content="By investing in biodiversity, you're contributing to climate resilience, species preservation, and sustainable development goals."
+              />
+            </div>
+          </div>
+          
+          <div className="mt-16 pt-8 border-t border-natura-200">
+            <InvestmentSection
+              title="NaturaTua Ustorp: Our First Project"
+              description="Our flagship project transforms 500 hectares of degraded farmland in Ustorp into a thriving ecosystem. Invest in BioDiversity Units (BDUs) that represent the annual cost of maintaining one hectare of restored land."
+              imageSrc="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              linkPath="/projects/ustorp"
+              linkText="Explore Project"
+            />
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Button 
+              className="bg-natura-700 hover:bg-natura-800 text-white"
+              asChild
+            >
+              <Link to="/projects/ustorp">
+                Become an Investor
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
