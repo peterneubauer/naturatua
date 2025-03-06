@@ -32,7 +32,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="mb-4">
               <img 
-                src="/naturatua-logo.png" 
+                src="/naturatua-logo.svg" 
                 alt="NaturaTua Logo" 
                 className="h-12" 
               />

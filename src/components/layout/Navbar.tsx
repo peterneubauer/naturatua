@@ -67,7 +67,7 @@ export function Navbar() {
           className="text-natura-900 font-serif transition-all hover:opacity-90"
         >
           <img 
-            src="/naturatua-logo.png" 
+            src="/naturatua-logo.svg" 
             alt="NaturaTua Logo" 
             className="h-10 md:h-12"
           />

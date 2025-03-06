@@ -60,7 +60,7 @@ export default function UstorpProject() {
               <InfoCard
                 icon={<Leaf size={24} />}
                 title="Ecological Restoration"
-                content="We are transforming 500 hectares of degraded farmland into diverse habitats that support hundreds of native species and enhance ecosystem functions."
+                content="We are transforming 50 hectares of degraded farmland into diverse habitats that support hundreds of native species and enhance ecosystem functions."
               />
             </div>
             <div className="reveal-on-scroll animation-delay-200">

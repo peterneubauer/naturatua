@@ -111,7 +111,7 @@ const Index = () => {
           <div className="mt-16 pt-8 border-t border-natura-200">
             <InvestmentSection
               title="NaturaTua Ustorp: Our First Project"
-              description="Our flagship project transforms 500 hectares of degraded farmland in Ustorp into a thriving ecosystem. Invest in BioDiversity Units (BDUs) that represent the annual cost of maintaining one hectare of restored land."
+              description="Our flagship project transforms 50 hectares of degraded farmland in Ustorp into a thriving ecosystem. Invest in BioDiversity Units (BDUs) that represent the annual cost of maintaining one hectare of restored land."
               imageSrc="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
               linkPath="/projects/ustorp"
               linkText="Explore Project"
