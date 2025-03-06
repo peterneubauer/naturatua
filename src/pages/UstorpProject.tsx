@@ -1,4 +1,3 @@
-
 import { Layout } from '@/components/layout/Layout';
 import { SectionTitle } from '@/components/ui/section-title';
 import { InfoCard } from '@/components/ui/info-card';
@@ -16,7 +15,7 @@ export default function UstorpProject() {
               <span className="inline-block text-natura-600 text-sm uppercase tracking-wider mb-4 font-medium">
                 Our First Project
               </span>
-              <h1 className="text-natura-900 mb-6">NaturaTua Ustorp</h1>
+              <h1 className="text-natura-900 mb-6 natura-font text-4xl md:text-5xl lg:text-6xl">NaturaTua Ustorp</h1>
               <p className="text-natura-700 mb-6 text-lg">
                 The NaturaTua Ustorp pilot project represents our first step toward creating a new market mechanism for biodiversity restoration. Located in Ustorp, this project transforms degraded farmland into thriving ecosystems.
               </p>

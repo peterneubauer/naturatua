@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'NaturaTua';
+  src: url('/fonts/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+       url('/fonts/HelveticaNeueLTStd-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.natura-font {
+  font-family: 'NaturaTua', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: -0.02em;
+} 

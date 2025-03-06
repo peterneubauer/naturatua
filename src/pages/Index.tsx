@@ -45,7 +45,7 @@ const Index = () => {
             <span className="inline-block text-sand-100 text-sm uppercase tracking-wider mb-4 font-medium">
               Invest in Biodiversity
             </span>
-            <h1 className="text-white mb-6">Help Restore Earth's Biodiversity</h1>
+            <h1 className="text-white mb-6 natura-font text-4xl md:text-5xl lg:text-6xl">Help Restore Earth's Biodiversity</h1>
             <p className="text-sand-100 mb-8 text-lg md:text-xl">
               NaturaTua seeks to reverse the negative trend in biodiversity through a new investment model. We create transparent opportunities for individuals and institutions to directly finance targeted ecological restoration.
             </p>

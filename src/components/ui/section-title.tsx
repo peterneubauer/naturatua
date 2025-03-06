@@ -1,4 +1,3 @@
-
 import { HTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -32,7 +31,7 @@ export function SectionTitle({
           {subtitle}
         </span>
       )}
-      <h2 className="text-natura-900 font-serif mb-4">{title}</h2>
+      <h2 className="text-natura-900 natura-font mb-4">{title}</h2>
       {description && <p className="text-natura-700">{description}</p>}
     </div>
   );
