@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { SectionTitle } from '@/components/ui/section-title';
@@ -35,7 +34,7 @@ const Index = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/10 z-10"></div>
           <img 
-            src="/hero-background.jpg" 
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80" 
             alt="Natural landscape" 
             className="h-full w-full object-cover object-center"
           />
