@@ -64,9 +64,13 @@ export function Navbar() {
       <div className="container flex items-center justify-between">
         <Link 
           to="/" 
-          className="text-natura-900 font-serif text-2xl font-medium transition-all hover:text-natura-700"
+          className="text-natura-900 font-serif transition-all hover:opacity-90"
         >
-          Natura
+          <img 
+            src="/naturatua-logo.png" 
+            alt="NaturaTua Logo" 
+            className="h-10 md:h-12"
+          />
         </Link>
 
         {/* Desktop Navigation */}

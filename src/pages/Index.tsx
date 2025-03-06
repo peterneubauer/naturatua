@@ -35,7 +35,7 @@ const Index = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/10 z-10"></div>
           <img 
-            src="https://images.unsplash.com/photo-1501870022016-de6802b7c439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+            src="/hero-background.jpg" 
             alt="Natural landscape" 
             className="h-full w-full object-cover object-center"
           />
@@ -53,7 +53,7 @@ const Index = () => {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
-                className="bg-natura-700 hover:bg-natura-800 text-white"
+                className="bg-natura-500 hover:bg-natura-600 text-white"
                 asChild
               >
                 <Link to="/projects/ustorp">
