@@ -52,7 +52,7 @@ const Index = () => {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
-                className="bg-natura-500 hover:bg-natura-600 text-white"
+                className="bg-natura-700 hover:bg-natura-800 text-white"
                 asChild
               >
                 <Link to="/projects/ustorp">
