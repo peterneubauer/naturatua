@@ -3,7 +3,7 @@ import { Layout } from '@/components/layout/Layout';
 import { SectionTitle } from '@/components/ui/section-title';
 import { InfoCard } from '@/components/ui/info-card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Leaf, Recycle, GlobeClock, DollarSign, LineChart } from 'lucide-react';
+import { ArrowRight, Leaf, Recycle, Globe, Clock, DollarSign, LineChart } from 'lucide-react';
 
 export default function UstorpProject() {
   return (
@@ -107,7 +107,7 @@ export default function UstorpProject() {
               <div className="mt-8 space-y-6">
                 <div className="flex items-start">
                   <div className="mt-1 mr-4 p-2 bg-natura-100 rounded-full text-natura-600">
-                    <GlobeClock size={20} />
+                    <Clock size={20} />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-natura-900 mb-2">What is a BDU?</h3>
